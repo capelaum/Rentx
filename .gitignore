@@ -1,13 +1,15 @@
-node_modules
 .vscode
+node_modules
+
 coverage
-.env
 dist
+
 ormconfig.json
 package-lock.json
 yarn-error.log
+.env
 
-tmp/
+# tmp/*
 tmp/avatar/*
 tmp/car_images/*
 
