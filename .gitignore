@@ -1,0 +1,16 @@
+node_modules
+.vscode
+coverage
+.env
+dist
+ormconfig.json
+package-lock.json
+yarn-error.log
+
+tmp/
+tmp/avatar/*
+tmp/car_images/*
+
+!tmp/.gitkeep
+!tmp/avatar/.gitkeep
+!tmp/car_images/.gitkeep
