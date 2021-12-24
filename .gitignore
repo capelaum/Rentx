@@ -9,7 +9,7 @@ package-lock.json
 yarn-error.log
 .env
 
-# tmp/*
+tmp/*
 tmp/avatar/*
 tmp/car_images/*
 
