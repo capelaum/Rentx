@@ -1,4 +1,5 @@
 import { container } from "tsyringe";
+import "dotenv/config";
 
 import { LocalStorageProvider } from "./implementations/LocalStorageProvider";
 import { S3StorageProvider } from "./implementations/S3StorageProvider";
