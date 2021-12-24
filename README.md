@@ -1,8 +1,21 @@
+<div align="center">
+  <img src=".github/ignite.svg" alt="WatchMe" width="150">
+  <h1>Ignite - Node.js</h1>
+  <h4>
+    RentX - API de alugueis de carros do treinamento Ignite - Trilha Node.js -
+    <a href="https://www.rocketseat.com.br" target="_blank">
+      RocketSeat 🚀
+    </a>
+  </h4>
+</div>
+
+## Legendas
+
 - **RF**: Requisitos Funcionais
 - **RNF**: Requisitos Não Funcionais
 - **RN**: Regras de Negócio
 
-# Cadastro de carro
+## Cadastro de carro
 
 **RF**
 
@@ -14,7 +27,7 @@
 - [x] O carro deve ser cadastrado, por padrão, com disponibilidade.
 - [x] O usuário responsável pelo cadastro deve ser um usuário administrador.\*
 
-# Listagem de carros
+## Listagem de carros
 
 **RF**
 
@@ -27,7 +40,7 @@
 
 - [x] O usuário não precisar estar logado no sistema.
 
-# Cadastro de Especificação no carro
+## Cadastro de Especificação no carro
 
 **RF**
 
@@ -39,7 +52,7 @@
 - [x] Não deve ser possível cadastrar uma `especificação já existente para o mesmo carro`.
 - [x] O usuário responsável pelo cadastro deve ser um usuário `administrador`.
 
-# Cadastro de imagens do carro
+## Cadastro de imagens do carro
 
 **RF**
 
@@ -54,7 +67,7 @@
 - [x] O usuário deve poder cadastrar `mais de uma imagem para o mesmo carro`
 - [x] O usuário responsável pelo cadastro deve ser um usuário `administrador`.
 
-# Alugel de carro
+## Alugel de carro
 
 **RF**
 
@@ -68,7 +81,7 @@
 - [x] O usuário deve estar `logado na aplicação`
 - [x] Ao realizar um aluguel, o status do carro deverá ser `alterado para indisponível`
 
-# Devolução de carro
+## Devolução de carro
 
 **RF**
 
@@ -84,7 +97,7 @@
 - [x] Caso haja multa, deverá ser somado ao total do aluguel.
 - [x] O usuário deve estar logado na aplicação
 
-# Listagem de Alugueis para usuário
+## Listagem de Alugueis para usuário
 
 **RF**
 
@@ -94,7 +107,7 @@
 
 - [x] O usuário deve estar logado na aplicação
 
-# Recuperar Senha
+## Recuperar Senha
 
 **RF**
 
