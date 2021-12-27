@@ -34,5 +34,5 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          source: "., !node_modules"
+          source: "., !node_modules, !docker-compose.yml"
           target: "~/app/Rentx"
