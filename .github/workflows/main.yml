@@ -28,7 +28,8 @@ jobs:
       - name: Build
         run: yarn build
 
-      - uses: appleboy/scp-action@master
+      - name: Copy files to remote server
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
