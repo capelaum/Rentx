@@ -1,3 +1,4 @@
+import { randomUUID } from "crypto";
 import {
   Entity,
   Column,
@@ -8,8 +9,8 @@ import {
   ManyToMany,
   JoinTable,
 } from "typeorm";
+
 import { Category } from "./Category";
-import { randomUUID } from "crypto";
 import { Specification } from "./Specification";
 
 @Entity("cars")
@@ -27,7 +28,7 @@ class Car {
   daily_rate: number;
 
   @Column()
-  available: boolean = true;
+  available: boolean;
 
   @Column()
   license_plate: string;
