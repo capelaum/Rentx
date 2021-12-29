@@ -1,4 +1,5 @@
 import { CarsRepositoryInMemory } from "@modules/cars/repositories/in-memory/CarsRepositoryInMemory";
+
 import { ListAvailableCarsUseCase } from "./ListAvailableCarsUseCase";
 
 let listAvailableCarsUseCase: ListAvailableCarsUseCase;
@@ -21,6 +22,7 @@ describe("List Cars", () => {
       fine_amount: 40,
       brand: "Ford",
       category_id: "Category 1",
+      specifications: [],
     });
 
     const cars = await listAvailableCarsUseCase.execute({});
@@ -36,6 +38,7 @@ describe("List Cars", () => {
       fine_amount: 40,
       brand: "Brand 2",
       category_id: "Category 2",
+      specifications: [],
     });
 
     const car3 = await carsRepositoryInMemory.create({
@@ -46,6 +49,7 @@ describe("List Cars", () => {
       fine_amount: 40,
       brand: "Brand 3",
       category_id: "Category 3",
+      specifications: [],
     });
 
     const car4 = await carsRepositoryInMemory.create({
@@ -56,6 +60,7 @@ describe("List Cars", () => {
       fine_amount: 40,
       brand: "Brand 4",
       category_id: "Category 4",
+      specifications: [],
     });
 
     const cars2 = await listAvailableCarsUseCase.execute({

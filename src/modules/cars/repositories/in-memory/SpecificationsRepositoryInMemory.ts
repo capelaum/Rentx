@@ -1,6 +1,7 @@
 import { ICreateSpecificationDTO } from "@modules/cars/dtos/ICreateSpecificationDTO";
-import { ISpecificationsRepository } from "../ISpecificationsRepository";
 import { Specification } from "@modules/cars/infra/typeorm/entities/Specification";
+
+import { ISpecificationsRepository } from "../ISpecificationsRepository";
 
 class SpecificationsRepositoryInMemory implements ISpecificationsRepository {
   specifications: Specification[] = [];
@@ -32,6 +33,10 @@ class SpecificationsRepositoryInMemory implements ISpecificationsRepository {
     );
 
     return specifications;
+  }
+
+  async list(): Promise<Specification[]> {
+    return this.specifications;
   }
 }
 
