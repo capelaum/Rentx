@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
 import { container } from "tsyringe";
-
 import { CreateCarSpecificationsUseCase } from "./CreateCarSpecificationsUseCase";
 
 class CreateCarSpecificationsController {

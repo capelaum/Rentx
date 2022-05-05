@@ -1,15 +1,14 @@
 import { randomUUID } from "crypto";
 import {
-  Entity,
   Column,
-  PrimaryColumn,
   CreateDateColumn,
+  Entity,
   JoinColumn,
-  ManyToOne,
-  ManyToMany,
   JoinTable,
+  ManyToMany,
+  ManyToOne,
+  PrimaryColumn,
 } from "typeorm";
-
 import { Category } from "./Category";
 import { Specification } from "./Specification";
 
